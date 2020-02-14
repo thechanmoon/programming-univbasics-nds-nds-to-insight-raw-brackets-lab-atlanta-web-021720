@@ -28,7 +28,7 @@ def directors_totals(nds)
     name = nds[index_i][:name]
     retHash[name] = 0
     nds[index_i][:movies].length.times do |index_j|
-        retHash[name]+=nds[index_i][:movies][index_j][:worldwide_gross]
+        retHash[name]=nds[index_i][:movies][index_j][:worldwide_gross]
     end 
   end  
   return retHash
